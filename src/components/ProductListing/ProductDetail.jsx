@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import styles from './ProductDetail.module.css';
 import { useCart } from '../../CartContext/CartContext';
 
+
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
@@ -53,6 +54,7 @@ const ProductDetail = () => {
   if (!product) return <p>Loading product details...</p>;
 
   return (
+    
     <div className={styles.productDetailContainer}>
       <div className={styles.productImages}>
         {Array.isArray(product.images) && product.images.length > 0 ? (
@@ -68,8 +70,9 @@ const ProductDetail = () => {
       <div className={styles.productInfo}>
         <h1>{product.name}</h1>
         <p className={styles.productDescription}>{product.description}</p>
+        <p className={styles.rating}> {product.rating} ⭐{product.totalRatings && `(${product.totalRatings} ratings)`}</p>
         <p className={styles.productPrice}>₹{product.price} {product.originalPrice && <span className={styles.originalPrice}>₹{product.originalPrice}</span>} {product.discount && <span className={styles.discount}>({product.discount} OFF)</span>}</p>
-        <p className={styles.rating}>⭐ {product.rating} {product.totalRatings && `(${product.totalRatings} ratings)`}</p>
+        
         <div className={styles.sizeSelector}>
           <p>Select Size:</p>
           {product.sizes?.length > 0 ? (
