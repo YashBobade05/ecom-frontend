@@ -1,0 +1,118 @@
+/* Checkout.module.css */
+
+.checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .checkoutItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 15px;
+  }
+  
+  .checkoutImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .checkoutDetails {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .checkoutDetails h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  .checkoutDetails p {
+    font-size: 1rem;
+    color: #666;
+    margin: 3px 0;
+  }
+  
+  .checkoutSummary {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .checkoutSummary h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .checkoutActions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .confirmOrderButton,
+  .clearAllButton,
+  .viewCartButton,
+  .removeButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirmOrderButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .clearAllButton {
+    background-color: #dc3545;
+  }
+  
+  .clearAllButton:hover {
+    background-color: #b02a37;
+  }
+  
+  .viewCartButton {
+    background-color: #28a745;
+  }
+  
+  .viewCartButton:hover {
+    background-color: #218838;
+  }
+  
+  .removeButton {
+    background-color: #ff4d4f;
+  }
+  
+  .removeButton:hover {
+    background-color: #d9363e;
+  }
+  

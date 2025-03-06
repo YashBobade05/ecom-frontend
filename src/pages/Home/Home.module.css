@@ -1,0 +1,20 @@
+
+.homeContainer {
+  font-family: Arial, sans-serif;
+}
+
+.shopNowButton {
+  background-color: #e53935;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.featuredProducts {
+  text-align: center;
+}
+.productsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

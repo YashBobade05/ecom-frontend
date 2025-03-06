@@ -1,0 +1,48 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import ShopMen from '../pages/ShopNow/ShopMen';
+import ShopWomen from '../pages/ShopNow/ShopWomen';
+import ShopKids from '../pages/ShopNow/ShopKids';
+import AboutUs from '../pages/AboutUs/AboutUs';
+import Contact from '../pages/Contact/Contact';
+import Shirt from '../pages/Product/Shirt';
+import Pant from '../pages/Product/Pant';
+import Tshirt from '../pages/Product/Tshirt';
+import Shoes from '../pages/Product/Shoes';
+import Account from '../pages/Account/Account';
+import Cart from '../pages/Cart/Cart';
+import Register from '../pages/SignUp/Register';
+import Login from '../pages/SignUp/Login';
+import Wishlist from '../pages/Wishlist/Wishlist';
+// import ProductDet from '../components/ProductListing/ProductDet';
+import ProductDetail from '../components/ProductListing/ProductDetail';
+import Checkout from '../pages/Checkout/Checkout';
+
+
+const AllRoutes = () => {
+  return (
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/account" element={<Account/>}/>
+        <Route path="/wishlist" element={<Wishlist/>} />
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/men" element={<ShopMen/>} />
+        <Route path="/women" element={<ShopWomen/>} />
+        <Route path="/kids" element={<ShopKids/>} />
+        <Route path="/shirt" element={<Shirt/>} />
+        <Route path="/pant" element={<Pant/>} />
+        <Route path="/tshirt" element={<Tshirt/>} />
+        <Route path="/shoes" element={<Shoes/>} />
+        <Route path="/product/:productId" element={<ProductDetail/>} />
+        <Route path="/checkout" element={<Checkout/>}/>
+      </Routes>
+  );
+};
+
+export default AllRoutes;

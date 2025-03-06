@@ -1,0 +1,49 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: #000;
+    transition: background-color 0.5s ease-in-out;
+   
+  }
+  
+  .bannerContent {
+    text-align: left;
+    line-height: 0.7;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h2 span {
+    font-size: 3rem;
+    color: #E63946;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .shopNowButton {
+    background-color: #C71F37;
+    width: 250px;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shopNowButton:hover {
+    background-color: #A4161A;
+  }
+  
+  .Herologo{
+   height: 500px;
+ 
+  }

@@ -1,0 +1,304 @@
+/* ProductDetail.module.css */
+
+.productDetailContainer {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.productImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 50%;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.productInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.productSubtitle {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ratingValue {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ratingCount {
+  color: gray;
+  font-size: 1rem;
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.currentPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+}
+
+.sizeSelector {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.sizeOption {
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sizeOption:hover,
+.sizeOption.selected {
+  background-color: #ddd;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.addToCartButton,
+.buyNowButton,
+.wishlistButton {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.addToCartButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buyNowButton {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.wishlistButton {
+  background-color: transparent;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+}
+
+.wishlistButton.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.productDetails {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+/* Container styling */
+.productDetailContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image gallery */
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product info */
+.productInfo {
+  flex: 1;
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.productSubtitle {
+  font-size: 16px;
+  color: #777;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.priceSection {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.currentPrice {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discount {
+  color: red;
+}
+
+/* Size selector */
+.sizeSelector {
+  margin: 20px 0;
+}
+
+.sizeOption {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.sizeOption.selected {
+  background-color: green;
+  color: white;
+}
+
+/* Buttons */
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.addToCartButton, .buyNowButton, .goToCartButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addToCartButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.buyNowButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.goToCartButton {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Product details */
+.productDetails {
+  margin-top: 20px;
+}
+
+.sizeSelector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.sizeButton {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sizeButton:hover {
+  background-color: #f0f0f0;
+}
+
+.selectedSize {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.actionButtons button {
+  padding: 12px 24px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
