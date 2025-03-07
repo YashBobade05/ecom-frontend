@@ -1,118 +1,120 @@
 /* Checkout.module.css */
 
 .checkoutContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .checkoutItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 90%;
-    max-width: 600px;
-    margin-bottom: 15px;
-  }
-  
-  .checkoutImage {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .checkoutDetails {
-    flex: 1;
-    margin-left: 15px;
-  }
-  
-  .checkoutDetails h3 {
-    font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 5px;
-  }
-  
-  .checkoutDetails p {
-    font-size: 1rem;
-    color: #666;
-    margin: 3px 0;
-  }
-  
-  .checkoutSummary {
-    background: #fff;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .checkoutSummary h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .checkoutActions {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-  }
-  
-  .confirmOrderButton,
-  .clearAllButton,
-  .viewCartButton,
-  .removeButton {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .confirmOrderButton:hover {
-    background-color: #0056b3;
-  }
-  
-  .clearAllButton {
-    background-color: #dc3545;
-  }
-  
-  .clearAllButton:hover {
-    background-color: #b02a37;
-  }
-  
-  .viewCartButton {
-    background-color: #28a745;
-  }
-  
-  .viewCartButton:hover {
-    background-color: #218838;
-  }
-  
-  .removeButton {
-    background-color: #ff4d4f;
-  }
-  
-  .removeButton:hover {
-    background-color: #d9363e;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+  padding-bottom: 100px; /* Space for fixed buttons */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-left: 30%;
+}
+
+
+.shoppingCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.clearAllButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.productList {
+  width: 100%;
+  max-width: 400px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.checkoutItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.checkoutImage {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.checkoutDetails {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.checkoutDetails h3 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+}
+
+.checkoutDetails p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 3px 0;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.fixedCheckoutActions {
+  position: fixed;
+  bottom: 0;
+  width: 400px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.checkoutSummary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.viewCartButton, .confirmOrderButton {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.viewCartButton:hover, .confirmOrderButton:hover {
+  background-color: #006400;
+}
