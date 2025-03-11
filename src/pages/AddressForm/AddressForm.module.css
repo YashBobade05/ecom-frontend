@@ -1,0 +1,86 @@
+/* Address Form Container */
+.addressContainer {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.addressContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.addressContainer p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='email']:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[disabled] {
+    background: #e9ecef;
+    color: #6c757d;
+}
+
+/* Button Styling */
+button[type='submit'] {
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type='submit']:hover {
+    background: #0056b3;
+}
+
+/* Message Styling */
+.message {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.message.success {
+    color: #28a745;
+}
+
+.message.error {
+    color: #dc3545;
+}

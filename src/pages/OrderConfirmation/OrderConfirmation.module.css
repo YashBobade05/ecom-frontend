@@ -1,0 +1,136 @@
+.confirmationContainer {
+    text-align: center;
+    padding: 20px;
+  }
+ 
+  .addressBox {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+ 
+  .orderDetails {
+    margin-top: 20px;
+  }
+ 
+  .orderItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+ 
+  .orderImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+ 
+  .goHomeButton {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+ 
+  .goHomeButton:hover {
+    background: #0056b3;
+  }
+
+
+
+  /* OrderConfirmation.module.css */
+
+.confirmationContainer {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmationContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.addressBox, .orderDetails {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  padding-right: 80px;
+}
+
+.orderItem:last-child {
+  border-bottom: none;
+}
+
+.orderImage {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.orderInfo {
+  flex: 1;
+}
+
+.totalAmount {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.placeOrderButton, .goHomeButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.placeOrderButton:hover, .goHomeButton:hover {
+  background: #45a049;
+}
+
+.placeOrderButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

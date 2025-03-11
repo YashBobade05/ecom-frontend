@@ -18,6 +18,9 @@ import Wishlist from '../pages/Wishlist/Wishlist';
 // import ProductDet from '../components/ProductListing/ProductDet';
 import ProductDetail from '../components/ProductListing/ProductDetail';
 import Checkout from '../pages/Checkout/Checkout';
+import AddressForm from '../pages/AddressForm/AddressForm';
+import OrderConfirmation from '../pages/OrderConfirmation/OrderConfirmation';
+
 
 
 const AllRoutes = () => {
@@ -41,6 +44,8 @@ const AllRoutes = () => {
         <Route path="/shoes" element={<Shoes/>} />
         <Route path="/product/:productId" element={<ProductDetail/>} />
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/address-form" element={<AddressForm/>} />
+        <Route path="/order-confirmation" element={<OrderConfirmation/>} />
       </Routes>
   );
 };

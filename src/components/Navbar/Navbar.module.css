@@ -49,3 +49,77 @@
 .dropdownMenu li:hover {
   background-color: #f5f5f5;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures proper vertical alignment */
+  padding: 10px 20px;
+  background-color: #fff; /* Optional: keeps the navbar background clean */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Optional: subtle shadow for better visibility */
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer; /* Optional: makes the logo feel more interactive */
+}
+
+.fav {
+  width: 18px;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navLinks li a:hover {
+  color: #ff5733; /* Optional: highlight effect on hover */
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 5px 0;
+  z-index: 1000;
+  min-width: 120px; /* Optional: Ensures consistent menu width */
+}
+
+.dropdownMenu li {
+  padding: 10px 20px;
+  text-align: center; /* Optional: keeps text nicely aligned */
+}
+
+.dropdownMenu li:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dropdown {
+    padding-right: 0;
+  }
+}
