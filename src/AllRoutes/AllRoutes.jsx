@@ -20,6 +20,9 @@ import ProductDetail from '../components/ProductListing/ProductDetail';
 import Checkout from '../pages/Checkout/Checkout';
 import AddressForm from '../pages/AddressForm/AddressForm';
 import OrderConfirmation from '../pages/OrderConfirmation/OrderConfirmation';
+import SavedAddress from '../pages/SavedAddress/SavedAddress';
+import AllOrder from '../pages/AllOrder/AllOrder';
+import EditAddress from '../pages/EditAddress/EditAddress';
 
 
 
@@ -46,6 +49,11 @@ const AllRoutes = () => {
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/address-form" element={<AddressForm/>} />
         <Route path="/order-confirmation" element={<OrderConfirmation/>} />
+        <Route path="/saved-address" element={<SavedAddress/>} />
+        <Route path="/orders" element={<AllOrder/>} />
+        <Route path="/edit-address" element={<EditAddress/>} />
+
+
       </Routes>
   );
 };
