@@ -1,0 +1,27 @@
+.dashboardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e6e6e6;
+    border-color: #aaa;
+}

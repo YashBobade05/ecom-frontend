@@ -1,0 +1,30 @@
+.profileContainer {
+    display: flex;
+    height: 100vh;
+    margin-left: 300px;
+    margin-top: 65px;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.profileContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileDetails {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

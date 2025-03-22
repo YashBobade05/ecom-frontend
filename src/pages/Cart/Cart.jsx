@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Cart.module.css';
 import { useCart } from '../../CartContext/CartContext';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Cart = () => {
   const { cart, removeFromCart, clearCart, updateQuantity, getTotalPrice } = useCart();
@@ -13,6 +14,8 @@ const Cart = () => {
 
   return (
     <div className={styles.cartContainer}>
+      <Navbar/>
+      <div className={styles.container}>
       <h2>Your Cart</h2>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
@@ -46,6 +49,7 @@ const Cart = () => {
           </div>
         </>
       )}
+    </div>
     </div>
   );
 };

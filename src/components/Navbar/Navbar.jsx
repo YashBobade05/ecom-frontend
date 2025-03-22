@@ -57,6 +57,7 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
+    localStorage.removeItem('email');
     localStorage.removeItem('user');
     setUserName(''); // Clear userName from state
     window.location.reload(); // Refresh the page after logout
@@ -64,9 +65,11 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <img className={styles.logo} src='./assets/navlogo.png' alt='Logo' /> 
+      <Link to="/">
+    <img className={styles.logo} src='/assets/navlogo.png' alt='Logo' />
+</Link>
       <ul className={styles.navLinks}>
-        <li><Link to="/wishlist"><img className={styles.fav} src='./assets/heart 5.png' alt='Favourite' /></Link></li>
+        <li><Link to="/wishlist"><img className={styles.fav} src='/assets/heart 5.png' alt='Favourite' /></Link></li>
         <li><Link to="/AboutUs">About Us</Link></li>
         <li><Link to="/contact">Contact Us</Link></li>
         <li><Link to="/cart">Cart</Link></li>
@@ -76,7 +79,7 @@ const Navbar = () => {
             {userName}
             {isDropdownOpen && (
               <ul className={styles.dropdownMenu}>
-                <li><button onClick={handleLogout}>Logout</button></li>
+                <li><button  className={styles.logout} onClick={handleLogout}>Logout</button></li>
               </ul>
             )}
           </li>

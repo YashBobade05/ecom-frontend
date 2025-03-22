@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../../components/Navbar/Navbar"; // Import Navbar component
+import CategoryProducts from "../../components/ProductListing/CategoryProducts";
 
-function Shirt() {
+const Shirt = () => {
   return (
-    <div>
-      Shirt
-    </div>
-  )
-}
+    <>
+      <Navbar /> {/* Add Navbar here */}
+      <div style={{ marginTop: "90px" }}> 
+        <CategoryProducts category="shirt" />
+      </div>
+    </>
+  );
+};
 
-export default Shirt
+export default Shirt;

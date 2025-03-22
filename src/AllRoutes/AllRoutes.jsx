@@ -22,7 +22,9 @@ import AddressForm from '../pages/AddressForm/AddressForm';
 import OrderConfirmation from '../pages/OrderConfirmation/OrderConfirmation';
 import SavedAddress from '../pages/SavedAddress/SavedAddress';
 import AllOrder from '../pages/AllOrder/AllOrder';
-import EditAddress from '../pages/EditAddress/EditAddress';
+import Profile from '../pages/Profile/Profile';
+// import PlaceOrder from '../components/PlaceOrder/PlaceOrder';
+
 
 
 
@@ -51,7 +53,9 @@ const AllRoutes = () => {
         <Route path="/order-confirmation" element={<OrderConfirmation/>} />
         <Route path="/saved-address" element={<SavedAddress/>} />
         <Route path="/orders" element={<AllOrder/>} />
-        <Route path="/edit-address" element={<EditAddress/>} />
+        <Route path="/profile" element={<Profile/>}/>
+        {/* <Route path="/place-Order" element={<PlaceOrder/>}/> */}
+        
 
 
       </Routes>

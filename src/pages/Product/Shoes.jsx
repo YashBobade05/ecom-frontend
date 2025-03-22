@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import CategoryProducts from '../../components/ProductListing/CategoryProducts';
+import Navbar from '../../components/Navbar/Navbar';
 
-function Shoes() {
-  return (
-    <div>
-      Shoes
-    </div>
-  )
-}
-
-export default Shoes
+ 
+ 
+const Shoes = () => {
+    return (
+        <>
+          <Navbar /> {/* Add Navbar here */}
+          <div style={{ marginTop: "90px" }}> 
+            <CategoryProducts category="shoes" />
+          </div>
+        </>
+      );
+};
+ 
+export default Shoes;

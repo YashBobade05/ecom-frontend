@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styles from './ProductDetail.module.css';
 import { useCart } from '../../CartContext/CartContext';
+import Navbar from '../Navbar/Navbar';
 
 
 const ProductDetail = () => {
@@ -56,6 +57,7 @@ const ProductDetail = () => {
   return (
     
     <div className={styles.productDetailContainer}>
+      <Navbar/> 
       <div className={styles.productImages}>
         {Array.isArray(product.images) && product.images.length > 0 ? (
           product.images.map((img, index) => (

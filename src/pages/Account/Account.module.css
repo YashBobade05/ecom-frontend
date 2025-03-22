@@ -1,24 +1,33 @@
 .accountContainer {
     display: flex;
-    gap: 20px;
+    flex-direction: column;  /* Navbar on top, content below */
 }
 
-.sidebar {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
+.mainContent {
+    display: flex; /* Sidebar and Content side by side */
+    margin-top: 0px; /* Space for fixed Navbar */
+}
+.content {
+    margin-left: 300px; /* Same width as sidebar */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Prevents content from shrinking */
 }
 
-.sidebar div {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
+h2 {
+    margin-bottom: 15px;
 }
 
-.sidebar div:last-child {
-    border-bottom: none;
+.orderItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.item {
+    padding: 5px 0;
 }
 
 .orderSection {
