@@ -53,7 +53,7 @@ const Profile = () => {
                         <div className={styles.profileDetails}>
                             <p><strong>Name:</strong> {profile.name}</p>
                             <p><strong>Email:</strong> {profile.email}</p>
-                            <p><strong>Phone:</strong> {profile.phone}</p>
+                            {/* <p><strong>Phone:</strong> {profile.phone}</p> */}
                         </div>
                     )}
                 </div>

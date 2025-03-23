@@ -1,11 +1,13 @@
 /* CSS MODULE (ProductListing.module.css) */
 .productContainer {
   text-align: center;
-  height: 600px;
+  height: 700px;
   margin-top: 60px;
+  /* margin-bottom:150px ; */
 }
 .productContainer h2{
   font-size: 30px;
+  margin-bottom: -60px;
 }
 
 .carouselWrapper {
@@ -13,8 +15,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 100%;
   height: 410px;
   margin-top: 30px;
+
 }
 
 .navButton {
@@ -41,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  height: 400px;
+  height: 300px;
 }
 
 .productCard {
@@ -51,6 +55,8 @@
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  width: 80%;
+  /* height: 300px; */
 }
 
 .productCard:hover {
@@ -64,28 +70,30 @@
 
 .productImage {
   width: 100%;
-  height: 250px;
+  height:280px;
   object-fit: cover;
   /* border-radius: 8px; */
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0;
+
 }
 
 .rating {
   color: #ffcc00;
+  margin-top: -5px;
 }
 
 p {
-  margin: 5px 0;
+  /* margin: 5px 0; */
 }
 
 .actionButtons {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .wishlistButton,
@@ -103,4 +111,7 @@ p {
 .wishlistButton:hover,
 .addToCartButton:hover {
   background-color: #444444;
+}
+.navButton{
+  margin-top: 100px;
 }

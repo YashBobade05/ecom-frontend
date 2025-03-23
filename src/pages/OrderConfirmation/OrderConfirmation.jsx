@@ -116,7 +116,7 @@ const OrderConfirmation = () => {
 
                 currency: "INR",
 
-                name: "eCommerce Store",
+                name: "Smart Shopping",
 
                 description: "Order Payment",
 

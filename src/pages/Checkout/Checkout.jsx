@@ -98,6 +98,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import styles from './Checkout.module.css';
 import { useCart } from '../../CartContext/CartContext';
 import { RxCross2 } from "react-icons/rx";
+import Navbar from '../../components/Navbar/Navbar';
+
  
 const Checkout = () => {
   const location = useLocation();
@@ -140,7 +142,8 @@ const Checkout = () => {
  
   return (
     <div className={styles.checkoutContainer}>
-      <div className={styles.shoppingCart} style={{ position: 'sticky', top: 0, background: '#fff', zIndex: 1000 }}>
+    <Navbar/>
+      <div className={styles.shoppingCart} style={{ position: 'sticky', top: 80, background: '#fff', zIndex: 1000 }}>
         <h2>Shopping Cart</h2>
         <button className={styles.clearAllButton} onClick={handleClearAll}>
           <RxCross2 />

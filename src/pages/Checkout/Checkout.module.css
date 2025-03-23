@@ -5,14 +5,16 @@
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 0;
   position: relative;
   padding-bottom: 100px; /* Space for fixed buttons */
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); */
   width: 500px;
   margin-left: 30%;
   border-radius: 5px;
+  margin-top: 80px;
+  
 }
 
 
@@ -24,6 +26,7 @@
   max-width: 400px;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  /* margin-top: 80px; */
 }
 
 h2 {
@@ -43,6 +46,8 @@ h2 {
   max-width: 400px;
   overflow-y: auto;
   flex: 1;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
 .checkoutItem {
@@ -53,14 +58,15 @@ h2 {
 }
 
 .checkoutImage {
-  width: 50px;
+  width: 60px;
   height: auto;
   object-fit: cover;
 }
 
 .checkoutDetails {
   flex: 1;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .checkoutDetails h3 {
@@ -85,6 +91,7 @@ h2 {
   position: fixed;
   bottom: 0;
   width: 400px;
+  /* height: 50px; */
   background-color: #fff;
   padding: 10px;
   display: flex;
